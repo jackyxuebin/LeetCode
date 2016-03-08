@@ -8,12 +8,13 @@ import org.junit.runner.notification.Failure;
 
 import test.threeHundred.LeetCode330Test;
 import test.threeHundred.LeetCode331Test;
+import test.threeHundred.LeetCode332Test;
 import test.threeHundred.LeetCode334Test;
 import test.threeHundred.LeetCode335Test;
 
 public class TestRunner {
     public static void main(String[] args){
-        Result result = JUnitCore.runClasses(LeetCode330Test.class);
+        Result result = JUnitCore.runClasses(LeetCode332Test.class);
         for (Failure failure : result.getFailures()) {
             System.out.println(failure.toString());
         }
